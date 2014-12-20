@@ -1,0 +1,9 @@
+template(name='configureLoginServiceDialogForDigitalocean')
+  p First, you&apos;ll need to get a Digitalocean Client ID. Follow these steps:
+  ol
+    li Visit
+      a(href='https://github.com/settings/applications/new', target='blank') https://github.com/settings/applications/new
+    li Set Homepage URL to:
+      span.url {{siteUrl}}
+    li SetAuthorization callback URL to:
+      span.url {{siteUrl}}_oauth/digitalocean
